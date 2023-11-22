@@ -1,5 +1,4 @@
 import 'package:adv_basics/data/questions.dart';
-import 'package:adv_basics/screens/question_screen.dart';
 import 'package:adv_basics/screens/questions_summary.dart';
 import 'package:flutter/material.dart';
 
