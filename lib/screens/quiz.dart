@@ -22,7 +22,7 @@ class _QuizState extends State<Quiz> {
 
   List<String> selectedAnswers = [];
 
-  void choosenAnswer(String answer) {
+  void chosenAnswer(String answer) {
     selectedAnswers.add(answer);
 
     if (selectedAnswers.length == questions.length) {
@@ -39,13 +39,13 @@ class _QuizState extends State<Quiz> {
 
     if (activeScreen == 'questions-screen') {
       screenWidget = QuestionsScreen(
-        onSelectAnswer: choosenAnswer,
+        onSelectAnswer: chosenAnswer,
       );
     }
 
     if (activeScreen == 'results-screen') {
-      screenWidget = ResultScreen(
-        chosenAnswer: selectedAnswers,
+      screenWidget = ResultsScreen(
+        chosenAnswers: selectedAnswers,
       );
     }
 
